@@ -99,7 +99,6 @@ int		Account::checkAmount( void ) const
 
 void	Account::displayStatus( void ) const
 {
-	// pas touche
 	_displayTimestamp();
 	std::cout << "index:" << this->_accountIndex << ";";
 	std::cout << "amount:" << checkAmount() << ";";
@@ -116,5 +115,3 @@ void    Account::_displayTimestamp( void )
     std::strftime(buffer, sizeof(buffer), "[%Y%m%d_%H%M%S] ", localTime);
     std::cout << buffer;
 }
-
-// Faire un print pour deposit et withdrawal afficher previous amount, amount witdrawed (ou deposited) et si withdraw possible 
