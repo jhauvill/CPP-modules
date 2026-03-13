@@ -1,6 +1,32 @@
 #include "../includes/PhoneBook.hpp"
 
-PhoneBook::PhoneBook() : count(-1), oldest(0) {}
+PhoneBook::PhoneBook() : _count(0), _oldest(0) {}
+
+void PhoneBook::set_count(int count)
+{
+	if (count <= 8)
+		this->_count = count;
+	else
+		this->_count = 8;
+}
+
+void PhoneBook::set_oldest(int oldest)
+{
+	if (oldest < 8)
+		this->_oldest = oldest;
+	else
+		this->_oldest = 7;
+}
+
+int PhoneBook::get_count()
+{
+	return this->_count;
+}
+
+int PhoneBook::get_oldest()
+{
+	return this->_oldest;
+}
 
 void PhoneBook::print_search(int index)
 {
