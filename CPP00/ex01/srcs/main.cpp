@@ -12,7 +12,7 @@ void truncate_print(std::string str)
 		std::cout << new_str;
 	}
 	else
-		std::cout << std::left << std::setw(10) << str;
+		std::cout << std::setw(10) << str;
 }
 
 void add(Contact &contact)
@@ -42,31 +42,31 @@ int main()
 	std::string command;
 
 	// Test
-	//phonebook.contacts[0].setFirstName("Alice"); phonebook.contacts[0].setLastName("Smith"); phonebook.contacts[0].setNickname("Ali");
-	//phonebook.contacts[0].setPhoneNumber("0600000001"); phonebook.contacts[0].setDarkestSecret("secret1");
+	phonebook.contacts[0].setFirstName("Alice"); phonebook.contacts[0].setLastName("Smith"); phonebook.contacts[0].setNickname("Ali");
+	phonebook.contacts[0].setPhoneNumber("0600000001"); phonebook.contacts[0].setDarkestSecret("secret1");
 
-	//phonebook.contacts[1].setFirstName("Bob"); phonebook.contacts[1].setLastName("Jones"); phonebook.contacts[1].setNickname("Bobby");
-	//phonebook.contacts[1].setPhoneNumber("0600000002"); phonebook.contacts[1].setDarkestSecret("secret2");
+	phonebook.contacts[1].setFirstName("Bob"); phonebook.contacts[1].setLastName("Jones"); phonebook.contacts[1].setNickname("Bobby");
+	phonebook.contacts[1].setPhoneNumber("0600000002"); phonebook.contacts[1].setDarkestSecret("secret2");
 
-	//phonebook.contacts[2].setFirstName("Charlie"); phonebook.contacts[2].setLastName("Brown"); phonebook.contacts[2].setNickname("Chuck");
-	//phonebook.contacts[2].setPhoneNumber("0600000003"); phonebook.contacts[2].setDarkestSecret("secret3");
+	phonebook.contacts[2].setFirstName("Charlie"); phonebook.contacts[2].setLastName("Brown"); phonebook.contacts[2].setNickname("Chuck");
+	phonebook.contacts[2].setPhoneNumber("0600000003"); phonebook.contacts[2].setDarkestSecret("secret3");
 
-	//phonebook.contacts[3].setFirstName("Diana"); phonebook.contacts[3].setLastName("Prince"); phonebook.contacts[3].setNickname("Di");
-	//phonebook.contacts[3].setPhoneNumber("0600000004"); phonebook.contacts[3].setDarkestSecret("secret4");
+	phonebook.contacts[3].setFirstName("Diana"); phonebook.contacts[3].setLastName("Prince"); phonebook.contacts[3].setNickname("Di");
+	phonebook.contacts[3].setPhoneNumber("0600000004"); phonebook.contacts[3].setDarkestSecret("secret4");
 
-	//phonebook.contacts[4].setFirstName("Eve"); phonebook.contacts[4].setLastName("Wilson"); phonebook.contacts[4].setNickname("Evie");
-	//phonebook.contacts[4].setPhoneNumber("0600000005"); phonebook.contacts[4].setDarkestSecret("secret5");
+	phonebook.contacts[4].setFirstName("Eve"); phonebook.contacts[4].setLastName("Wilson"); phonebook.contacts[4].setNickname("Evie");
+	phonebook.contacts[4].setPhoneNumber("0600000005"); phonebook.contacts[4].setDarkestSecret("secret5");
 
-	//phonebook.contacts[5].setFirstName("Frank"); phonebook.contacts[5].setLastName("Miller"); phonebook.contacts[5].setNickname("Franky");
-	//phonebook.contacts[5].setPhoneNumber("0600000006"); phonebook.contacts[5].setDarkestSecret("secret6");
+	phonebook.contacts[5].setFirstName("Frank"); phonebook.contacts[5].setLastName("Miller"); phonebook.contacts[5].setNickname("Franky");
+	phonebook.contacts[5].setPhoneNumber("0600000006"); phonebook.contacts[5].setDarkestSecret("secret6");
 
-	//phonebook.contacts[6].setFirstName("Grace"); phonebook.contacts[6].setLastName("Lee"); phonebook.contacts[6].setNickname("Gracie");
-	//phonebook.contacts[6].setPhoneNumber("0600000007"); phonebook.contacts[6].setDarkestSecret("secret7");
+	phonebook.contacts[6].setFirstName("Grace"); phonebook.contacts[6].setLastName("Lee"); phonebook.contacts[6].setNickname("Gracie");
+	phonebook.contacts[6].setPhoneNumber("0600000007"); phonebook.contacts[6].setDarkestSecret("secret7");
 
-	//phonebook.contacts[7].setFirstName("Henry"); phonebook.contacts[7].setLastName("Ford"); phonebook.contacts[7].setNickname("Hank");
-	//phonebook.contacts[7].setPhoneNumber("0600000008"); phonebook.contacts[7].setDarkestSecret("secret8");
-	//phonebook.count = 8;
-	//phonebook.oldest = 0;
+	phonebook.contacts[7].setFirstName("Henry"); phonebook.contacts[7].setLastName("Ford"); phonebook.contacts[7].setNickname("Hank");
+	phonebook.contacts[7].setPhoneNumber("0600000008"); phonebook.contacts[7].setDarkestSecret("secret8");
+	phonebook.count = 8;
+	phonebook.oldest = 0;
 	while (1)
 	{
 		std::cout << "Enter a command: ";
