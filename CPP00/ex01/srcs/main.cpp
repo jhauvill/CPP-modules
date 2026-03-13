@@ -113,8 +113,6 @@ int main()
 			else
 				std::cout << "Wrong index" << std::endl;
 		}
-		else
-			std::cout << "Invalid command. Please enter ADD, SEARCH, or EXIT." << std::endl;
 	}
 	return 0;
 }
