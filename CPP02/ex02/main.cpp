@@ -30,4 +30,13 @@ int main( void )
 //	std::cout << a-- << std::endl;
 //	std::cout << a << std::endl;
 //	std::cout << Fixed::min(a, b) << std::endl;
+//	Fixed d(c);
+//	if (d == c)
+//		std::cout << d << " is equal to " << c << std::endl;
+//	if (a != c)
+//		std::cout << a << " is different from " << c << std::endl;
+//	if (d >= b)
+//		std::cout << d << " is greater than or equal to " << b << std::endl;
+//	if (d >= c)
+//		std::cout << d << " is greater than or equal to " << c << std::endl;
 //}
