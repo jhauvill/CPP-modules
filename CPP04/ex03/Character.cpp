@@ -5,7 +5,9 @@ Character::Character(std::string name)
 	this->_name = name;
 	for (int i = 0; i < 4; i++)
 		this->_inventory[i] = NULL;
-	this->_floor_size = 0;
+	this->_floor_size = 200;
+	for (int i = 0; i < this->_floor_size; i++)
+		this->_floor[i] = NULL;
 }
 
 Character::Character(const Character &src)
@@ -65,24 +67,33 @@ void Character::equip(AMateria *m)
 		if (!this->_inventory[i])
 		{
 			this->_inventory[i] = m;
-			break;
+			return ;
 		}
 	}
+	delete m;
 }
 
 void Character::unequip(int idx)
 {
 	if (idx >= 0 && idx < 4)
 	{
-		for (int i = 0; this->_floor[i]; i++)
-		this->_floor[i] = this->_inventory[idx];
-		this->_inventory[idx] = NULL;
-		this->_floor_size++;
+		for (int i = 0; i < this->_floor_size; i++)
+		{
+			if (!this->_floor[i])
+			{
+				this->_floor[i] = this->_inventory[idx];
+				this->_inventory[idx] = NULL;
+				break;
+			}
+		}
 	}
 }
 
 void Character::use(int idx, ICharacter &target)
 {
-	if (this->_inventory[idx])
-		_inventory[idx]->use(target);
+	if (idx >= 0 && idx < 4)
+	{
+		if (this->_inventory[idx])
+			_inventory[idx]->use(target);
+	}
 }

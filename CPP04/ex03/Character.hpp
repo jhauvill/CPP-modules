@@ -10,7 +10,7 @@ private:
 	std::string _name;
 	AMateria *_inventory[4];
 	int _floor_size;
-	AMateria *_floor[];
+	AMateria *_floor[200];
 public:
 	Character(std::string name);
 	Character(const Character &src);
