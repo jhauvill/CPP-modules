@@ -1,4 +1,4 @@
-NAME = serialize
+NAME = serialization
 SOURCES = main.cpp Serializer.cpp
 OBJECTS = $(SOURCES:%.cpp=%.o)
 
