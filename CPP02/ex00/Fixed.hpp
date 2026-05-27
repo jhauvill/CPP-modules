@@ -11,7 +11,7 @@ private:
 public:
 	Fixed();
 	Fixed(const Fixed &src);
-	Fixed &operator=(const Fixed &rhs);
+	Fixed &operator=(const Fixed &second);
 	~Fixed();
 	int getRawBits(void) const;
 	void setRawBits(int const raw);

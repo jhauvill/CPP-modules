@@ -1,6 +1,5 @@
-NAME = account
-SOURCES = Account.cpp tests.cpp
-
+NAME = btc
+SOURCES = main.cpp BitcoinExchange.cpp
 OBJECTS = $(SOURCES:%.cpp=%.o)
 
 CFLAGS = -Wall -Wextra -Werror -g3 -std=c++98
@@ -9,7 +8,7 @@ CC = c++
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
- 
+
 all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJECTS)

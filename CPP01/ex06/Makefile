@@ -1,5 +1,5 @@
-NAME = phonebook
-SOURCES = srcs/Contact.cpp srcs/main.cpp srcs/PhoneBook.cpp
+NAME = harlFilter
+SOURCES = main.cpp Harl.cpp
 
 OBJECTS = $(SOURCES:%.cpp=%.o)
 

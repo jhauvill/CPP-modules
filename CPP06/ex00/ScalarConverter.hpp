@@ -15,10 +15,11 @@ private:
 	ScalarConverter();
 	ScalarConverter(const ScalarConverter &src);
 	ScalarConverter &operator=(const ScalarConverter &second);
+	~ScalarConverter();
 
 public:
-	~ScalarConverter();
 	static void convert(std::string str);
+
 };
 
 
