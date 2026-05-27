@@ -46,7 +46,7 @@ float BitcoinExchange::validDate(std::string &date)
 	std::map<std::string, float>::iterator it;
 
 	it = this->_db.lower_bound(date);
-	if (it == this->_db.begin())
+	if (it == this->_db.begin() && date != it->first)
 		throw std::runtime_error("Error: wrong date.");
 	if (it->first != date)
 		it--;
